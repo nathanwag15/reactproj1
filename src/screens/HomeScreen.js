@@ -4,7 +4,7 @@ import { Text, StyleSheet, View, Button, TouchableOpacity, ImagePropTypes } from
 const HomeScreen = props => {
   return (
     <View>
-        <Text style={styles.text}>Hi There!</Text>
+        <Text style={styles.text}>Howdy There!</Text>
         <Button 
           title="Go to Components Demo"
           onPress={() => props.navigation.navigate("Components")}
