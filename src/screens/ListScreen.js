@@ -25,14 +25,14 @@ const ListScreen = () => {
 
     return (
         <FlatList 
-        horizontal = {false}
-        showsHorizontalScrollIndicator={false}
-        keyExtractor = { (friend) => friend.name}
-        data={friends} 
-        renderItem={({ item }) => {
-        return <Text style={styles.textStyle}>{item.name} - Age {item.age}</Text>
-        }} 
-    />
+            horizontal = {false}
+            showsHorizontalScrollIndicator={false}
+            keyExtractor = { friend => friend.name}
+            data={friends} 
+            renderItem={({ item }) => {
+            return <Text style={styles.textStyle}>{item.name} - Age {item.age}</Text>
+            }} 
+        />
     );
 }
 
