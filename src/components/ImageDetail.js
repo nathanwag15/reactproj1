@@ -6,7 +6,7 @@ import mountain from "../../assets/mountain.jpg";
 
 
 
-const ImageDetail = ({imageSource, title, score}) => {
+const ImageDetail = (props) => {
 return (
         <View>
                 <Image source={props.imageSource} />
